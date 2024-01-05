@@ -1,0 +1,41 @@
+<section>
+<div id="div1">
+    <div class="card shadow-lg" style="width: 1250px; height: fit-content">
+        <div class="card-body">
+          <h5 class="card-title">Candidate Table</h5>
+          <form #candidateref = "ngForm" (ngSubmit)="voted(candidateref.value)" >
+          <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col"><div *ngIf="status == true">Your Vote</div></th>
+        <th scope="col"><div *ngIf="status == false">Select one</div></th>
+        <th scope="col">Sr no.</th>
+        <th scope="col">Name</th>
+        <th scope="col">Symbol</th>
+        <th scope="col">Party</th>
+        <!-- <th scope="col">Count</th> -->
+      </tr>
+    </thead>
+    <tbody *ngFor="let a of candidates ;let i = index ">
+      <tr>
+        <td scope="row"><div *ngIf="status == true  && a.candidate == vote"><img src="../../assets/yes.png" alt="yes" style="height: 60px;width: 60px;"></div></td>
+        <td scope="row">
+          <div *ngIf="status == false">
+          <input class="form-check-input" type="radio" name="0" id="flexRadioDefault2" checked [value]="a" ngModel> 
+        </div>
+        </td>
+        <td scope="row">{{i + 1}}</td>
+        <td scope="row">{{a.candidate}}</td>
+        <td scope="row">{{a.party}}</td>
+        <td scope="row"><img alt="{{a.party}}" title="{{a.party}}" src="{{a.symbol}}" style="width : 75px;height: 75px;"/></td>
+        <!-- <td scope="row">{{a.count}}</td> -->
+      </tr> 
+    </tbody>
+  </table>  
+  <button type="submit" class="btn btn-primary" *ngIf="status != true && value != 'admin'">Submit vote</button>
+  <p *ngIf="status == true"><strong>You have Already Voted Thank you for your contribution....</strong></p>
+    </form>
+  </div>
+  </div>      
+</div>
+</section>  

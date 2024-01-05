@@ -1,0 +1,8 @@
+.container{
+    width: 600px;
+    height: fit-content;
+    padding: 2em;
+    background-color: rgb(240, 234, 245);
+    margin-top: 2em;
+    border-radius: 10px;
+}   

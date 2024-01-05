@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+html,body{
+    background-color: rgb(110, 165, 165);
+}
+.is_disabled {
+    cursor: default;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.is_active {
+  cursor: pointer;
+}

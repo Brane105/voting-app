@@ -1,0 +1,31 @@
+.container{
+    width: 600px;
+    height: 500px;
+    padding: 2em;
+    overflow-y: scroll;
+    background-color: rgb(240, 234, 245);
+    margin-top: 2em;
+    border-radius: 10px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 50px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(155, 154, 154);
+    border: 2px solid transparent;
+    border-radius: 50px;
+    background-clip: padding-box; 
+  } 
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(124, 122, 122);
+  }

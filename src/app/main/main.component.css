@@ -1,0 +1,17 @@
+a{
+    cursor: pointer;
+}
+section{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+#div1{
+    margin-top: 2%;
+    display: inline-block;
+    justify-content: center;
+    /* height: 266px;
+    width: 266px; */
+    /* border: 1px solid black; */
+    margin-left: 4.5%;
+}
